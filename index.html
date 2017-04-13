@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
-  <title>tic tac toe - second pass</title>
-  
-  <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <main>
-      <h1>tic tac toe</h1>
-      <section>
-        <div class="row">
-          <div id="0"></div>
-          <div id="1"></div>
-          <div id="2"></div>
-        </div>
-        <div class="row">
-          <div id="3"></div>
-          <div id="4"></div>
-          <div id="5"></div>
-        </div>
-        <div class="row">
-          <div id="6"></div>
-          <div id="7"></div>
-          <div id="8"></div>
-        </div>
-        <p id="winner"></p>
-      </section>
-    </main>
-    <script src="main.js"></script>
-  </body>
-  </html>
+  <title>Tic Tac Toe!</title>
+</head>
+<body>
+<h1>Tic Tac Toe</h1>
+<div class = 'info'>
+  <h1 id='name1'>Player1: X</h1>
+  <h1 id='name2'>Player2: O</h1>
+  <input id='new_game' type="button" value="New Game" onClick="window.location.reload()">
+
+</div>
+<!-- I know inline styles are against moral law but I needed them here because I use the id's
+in the game logic and I can't select them in css...may god and man forgive me! -->
+  <div class="wrapper">
+    <div class="row1" >
+      <div id = "1" class="box" style = 'border-left: 0'></div>
+      <div id = "2" class="box"></div>
+      <div id = "3" class="box"></div>
+    </div>
+    <div class="row2">
+      <div id = "4" class="box" style = 'border-left: 0'></div>
+      <div id = "5" class="box"></div>
+      <div id = "6" class="box"></div>
+    </div>
+    <div class="row3">
+      <div id="7" class="box" style = 'border:0' ></div>
+      <div id="8" class="box" style = 'border-bottom: 0'></div>
+      <div id="9" class="box" style = 'border-bottom: 0'></div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
