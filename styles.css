@@ -1,0 +1,19 @@
+main {
+  font-size: 36px;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+  width: 90%;
+}
+
+.row div {
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 128px;
+  line-height: 128px;
+  margin: 2px 0px;
+  max-width: 128px;
+  vertical-align: middle;
+  width: 30%;
+}
